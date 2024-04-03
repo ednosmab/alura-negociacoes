@@ -28,7 +28,7 @@ export class NegociacoesView extends View<Negociacoes>{
         `
     }
 
-    update(model: Negociacoes): void {
+    public update(model: Negociacoes): void {
         const template = this.template(model)
         console.log(template)
         this.elemento.innerHTML = template
