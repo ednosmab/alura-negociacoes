@@ -1,12 +1,12 @@
 import { View } from "./view.js";
 export class MensagemView extends View {
-    template(model) {
+    template(model, alerta) {
         return `
-            <p class="alert alert-info">${model}</p>
+            <p class="alert ${alerta}">${model}</p>
         `;
     }
-    update(model) {
-        const template = this.template(model);
+    update(model, alerta) {
+        const template = this.template(model, alerta);
         this.elemento.innerHTML = template;
     }
 }
