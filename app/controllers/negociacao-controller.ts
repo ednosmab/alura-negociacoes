@@ -4,6 +4,10 @@ import { NegociacoesView } from "../views/negociacoes-view.js"
 import { MensagemView } from "../views/mensagem-view.js"
 import { DiasDaSemana } from "../enumarations/dias-da-semana.js"
 
+/*
+    Esse comentário não irá para o arquivo convertido para javascript por causa do 
+    "removeComments": true
+*/ 
 export class NegociacaoController {
     private inputData: HTMLInputElement
     private inputQuantidade: HTMLInputElement
@@ -13,9 +17,9 @@ export class NegociacaoController {
     private mensagemView = new MensagemView("#mensagemView")
 
     constructor(){
-        this.inputData = document.querySelector("#data")
-        this.inputQuantidade = document.querySelector("#quantidade")
-        this.inputValor = document.querySelector("#valor")
+        this.inputData = document.querySelector("#data") as HTMLInputElement
+        this.inputQuantidade = document.querySelector("#quantidade") as HTMLInputElement
+        this.inputValor = document.querySelector("#valor") as HTMLInputElement
         this.negociacoesView.update(this.negociacoes)
 
     }
