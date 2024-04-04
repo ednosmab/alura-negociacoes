@@ -9,7 +9,7 @@ export class NegociacaoController {
     private inputQuantidade: HTMLInputElement
     private inputValor: HTMLInputElement
     private negociacoes = new Negociacoes()
-    private negociacoesView = new NegociacoesView('#negociacoesView')
+    private negociacoesView = new NegociacoesView('#negociacoesView', true)
     private mensagemView = new MensagemView("#mensagemView")
 
     constructor(){
@@ -17,6 +17,7 @@ export class NegociacaoController {
         this.inputQuantidade = document.querySelector("#quantidade")
         this.inputValor = document.querySelector("#valor")
         this.negociacoesView.update(this.negociacoes)
+
     }
 
     public adiciona (): void {
@@ -32,7 +33,6 @@ export class NegociacaoController {
         this.negociacoes.adicionar(negociacao)
         this.limparFomulario()
         this.atualizaView()
-        
     }
     
 
