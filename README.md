@@ -4,8 +4,6 @@
 
 <p align="center">Projeto desenvolvido no curso TypeScript parte 1: evoluindo seu JavaScript</p>
 
-# 🏗️ Em construção
-
 ## 🪛 Tecnologias utilizadas
 - ``Html 5``
 - ``CSS 3``
