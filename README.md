@@ -2,7 +2,7 @@
 
 <h1 align="center">💰 Negociações 💰</h1>
 
-<p align="center">Projeto desenvolvido no curso TypeScript parte 1: evoluindo seu JavaScript</p>
+<p align="center">Projeto desenvolvido no curso TypeScript parte 1 e 2: evoluindo seu JavaScript</p>
 
 ## 🪛 Tecnologias utilizadas
 - ``Html 5``
@@ -13,3 +13,15 @@
 - ``Concurrently 6.0``
 - ``Lite-server 2.6``
 
+## Como rodar
+Baixe o projeto, abra no terminal e execute o seguinte comando para instalar as dependências
+
+### npm i
+
+Em seguida execute o seguinte comando para rodar o projeto
+
+### npm run start
+
+verifique se o projeto está rodando no terminal e acesse a URL: http://localhost:3000
+
+Em seguida tente simular uma negociação da bolsa de valores 💸 🤑
